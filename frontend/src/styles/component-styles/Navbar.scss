@@ -1,0 +1,36 @@
+@import "../Variables.scss";
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 10vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: $backgroundWhite;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    h1 {
+        margin-right: auto;
+        margin-left: 20px;
+        color: $primaryDark;
+        span {
+            color: $primaryColor;
+        }
+    }
+
+    a {
+        margin: 10px;
+    }
+
+
+}
+
+.wrapper a:last-child {
+    margin-right: 100px;
+}
+
