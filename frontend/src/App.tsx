@@ -1,5 +1,6 @@
 import './styles/Main.scss'
 import Navbar from "./components/Navbar.tsx" 
+import DebugInput from './components/DebugInput.tsx'
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
       <Navbar/>
       <h1>Hello World</h1>
       <p>LiftLog Website</p>
+
+      <DebugInput/>
     </>
   )
 }
