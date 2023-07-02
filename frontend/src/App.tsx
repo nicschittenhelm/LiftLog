@@ -10,10 +10,18 @@ function App() {
     <>
       <Navbar/>
       <div className='main-heading-wrapper'>
-        <h1 className='main-heading'>Keep progressing by <span>logging</span> your workouts with us!</h1>
+        <h1 className='main-heading'>
+          <span>Log</span>
+          <span>Your</span><br></br>
+          <span>Progress</span>
+        </h1>
         <p>test</p>
       </div>
+
       <img className='main-heroimage' src={heroimg}></img>
+      <div id='main-shapes'>
+      </div>
+
 
     </>
   )

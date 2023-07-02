@@ -8,14 +8,14 @@ body, html {
     padding: 0;
     left: 0;
     top: 0;
-    background-image: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 100%); 
+    background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 100%); 
     overflow: hidden;
 }
 
 
 .main-heading-wrapper {
     position: absolute;
-    border: 2px dashed black;
+    border: 1px solid rgba(0,0,0,0.1);
     width: 40vw;
     left: 10vw;
     top: 30vh;
@@ -23,15 +23,37 @@ body, html {
 
 
     h1 {
-        color: $secondaryDark;
+        color: black;
         width: 35vw;
         font-family: $font-heading;
-        font-weight: 600;
-        font-size: 1.4em;
+        font-weight: 900;
+        font-size: 65px;
+        letter-spacing: -1px;
         text-transform: capitalize;
+        font-style: italic;
+        line-height: 100px;
+
     
-        span {
-            color: $primaryColor;
+        span:nth-child(1) {
+            font-size: 2em;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        span:nth-child(2) {
+            font-size: 3em;
+            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(4) {
+            font-size: 2.2em;
+            letter-spacing:20px;
+            font-style: normal;
+            font-weight: 800;
+            font-family: $font-text;
         }
     }
 }
