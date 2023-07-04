@@ -1,7 +1,8 @@
 import './styles/Main.scss'
 import Navbar from "./components/Navbar.tsx" 
 import DebugInput from './components/DebugInput.tsx'
-import heroimg from './assets/liftlog_hero.png'
+import img1 from './assets/1.jpg'
+import img4 from './assets/4.png'
 
 
 
@@ -12,14 +13,20 @@ function App() {
       <div className='main-heading-wrapper'>
         <h1 className='main-heading'>
           <span>Log</span>
-          <span>Your</span><br></br>
+          <span>
+            Your
+          </span>
+          <br></br>
           <span>Progress</span>
         </h1>
-        <p>test</p>
+        <img className='main-heroimage' src={img4}></img>
+
+        <div id='main-btn-wrapper'>
+          <p>Button Here!</p>
+        </div>
       </div>
 
-      <img className='main-heroimage' src={heroimg}></img>
-      
+
       <div id='shape-wrapper'>
         <div id='main-shape'/>
       </div>

@@ -1,24 +1,24 @@
 @import "Variables.scss";
 
 body, html {
-    position:absolute;
+    position: relative;
     height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
     left: 0;
     top: 0;
-    background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 100%); 
+    background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(200,200,200,1) 100%); 
     overflow: hidden;
 }
 
 
 .main-heading-wrapper {
     position: absolute;
-    border: 1px solid rgba(0,0,0,0.1);
-    width: 40vw;
-    left: 10vw;
-    top: 30vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
     font-size: 36px;
 
 
@@ -27,10 +27,11 @@ body, html {
         width: 35vw;
         font-family: $font-heading;
         font-weight: 900;
-        font-size: 65px;
+        font-size: 2em;
         letter-spacing: -1px;
         text-transform: capitalize;
-        line-height: 100px;
+        line-height: 2em;
+
     
         span:nth-child(1) {
             font-size: 2em;
@@ -40,31 +41,55 @@ body, html {
         }
 
         span:nth-child(2) {
+            position: relative;
+            color: $primaryColor;
             font-family: $font-raleway;
             font-weight: 900;
             font-size: 3.5em;
-            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            background: linear-gradient(90deg, $primaryColor 0%, $secondaryColor 100%);
+            -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
-            -webkit-text-fill-color: transparent;
+            z-index: 1;
         }
 
         span:nth-child(4) {
-            font-size: 2.2em;
-            letter-spacing:20px;
+            position: relative;
+            font-size: 2.3em;
+            letter-spacing:10px;
             font-style: italic;
             font-weight: 800;
             font-family: $font-anton;
+            z-index: 2;
         }
     }
-}
 
-.main-heroimage {
-    position: absolute;
-    height: 150vh;
-    left: 60vw;
-}
+    .main-heroimage {
+        height: 1200px;
+        top: -90px;
+        left: 120px;
+        position: absolute;
+        mix-blend-mode: hard-light;
+        z-index: 1;
+    }
 
+    #main-btn-wrapper {
+        position: absolute;
+        height: 400px;
+        width: 900px;
+        top: 170px;
+        left: 135px;
+        border: 8px dashed black;
+        z-index: 0;
+
+        p {
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+        }
+    }
+
+}
 
 #shape-wrapper {
 
@@ -73,6 +98,7 @@ body, html {
         width: 30vw;
         background-color: $primaryColor;
         float: right;
+        display: none;
     }
 
 }
