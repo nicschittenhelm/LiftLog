@@ -19,7 +19,9 @@ function App() {
       </div>
 
       <img className='main-heroimage' src={heroimg}></img>
-      <div id='main-shapes'>
+      
+      <div id='shape-wrapper'>
+        <div id='main-shape'/>
       </div>
 
 

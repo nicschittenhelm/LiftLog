@@ -30,18 +30,19 @@ body, html {
         font-size: 65px;
         letter-spacing: -1px;
         text-transform: capitalize;
-        font-style: italic;
         line-height: 100px;
-
     
         span:nth-child(1) {
             font-size: 2em;
-            letter-spacing: 2px;
-            font-weight: 700;
+            letter-spacing: -3px;
+            font-weight: 800;
+            font-family: $font-merriweather;
         }
 
         span:nth-child(2) {
-            font-size: 3em;
+            font-family: $font-raleway;
+            font-weight: 900;
+            font-size: 3.5em;
             background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
             -webkit-background-clip: text;
             background-clip: text;
@@ -51,9 +52,9 @@ body, html {
         span:nth-child(4) {
             font-size: 2.2em;
             letter-spacing:20px;
-            font-style: normal;
+            font-style: italic;
             font-weight: 800;
-            font-family: $font-text;
+            font-family: $font-anton;
         }
     }
 }
@@ -62,4 +63,16 @@ body, html {
     position: absolute;
     height: 150vh;
     left: 60vw;
+}
+
+
+#shape-wrapper {
+
+    #main-shape {
+        height: 100vh;
+        width: 30vw;
+        background-color: $primaryColor;
+        float: right;
+    }
+
 }
