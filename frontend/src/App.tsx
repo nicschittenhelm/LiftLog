@@ -22,7 +22,7 @@ function App() {
         <img className='main-heroimage' src={img4}></img>
 
         <div id='main-btn-wrapper'>
-          <p>Button Here!</p>
+          <button type="button">Start Now!</button>
         </div>
       </div>
 

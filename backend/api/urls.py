@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -10,4 +10,6 @@ urlpatterns = [
     
     path("template/", views.get_workouttemplate),
     path("template/add/", views.create_workouttemplate),
+    
+    path("accounts/", include('allauth.urls')),
 ]

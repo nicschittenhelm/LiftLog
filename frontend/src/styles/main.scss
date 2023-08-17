@@ -25,7 +25,6 @@ body, html {
     h1 {
         color: black;
         width: 35vw;
-        font-family: $font-heading;
         font-weight: 900;
         font-size: 2em;
         letter-spacing: -1px;
@@ -82,11 +81,25 @@ body, html {
         border: 8px dashed black;
         z-index: 0;
 
-        p {
+        button {
             position: absolute;
             right: 50px;
-            bottom: 0;
+            bottom: 50px;
+            font-family: $font-text;
+            background: linear-gradient(to right, $primaryColor, $secondaryColor);
+            color: white;
+            text-decoration: none;
+            width: 280px;
+            height: 80px;
+            font-size: 1em;
+            border-style: solid;
+            border-width: 0px;
+            border-radius: 10px;
+            text-transform:uppercase;
+            box-shadow:inset -5px -8px 0px rgba(0,0,0,0.2);
+
         }
+        
     }
 
 }

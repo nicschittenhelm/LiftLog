@@ -14,3 +14,4 @@ The following dependencies are required for this project:
 
 - bypass execution policy for current session: `Set-ExecutionPolicy Unrestricted -Scope Process`
 - activate env: `.\env\Scripts\activate`
+- run server: `python .\manage.py runserver`
